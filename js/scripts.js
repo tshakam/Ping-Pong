@@ -12,15 +12,16 @@ function pingpong(number) {
       numbers.push(index);
     }
     }
-// #user interface
-
+  //front end logic
 $(document).ready(function() {
-  $("#button").click(function() {
-    var number = parseInt($("#Input").val());
-    pingpong(number);
-    numbers.forEach(function(number){
-      $("#results").append("<li>" +number + "</li>");
-    });
+  $("form#ping-pong").submit(function(event) {
+    event.preventDefault();
+    $("ul").empty();
+    var  number = parseInt($("input#userNumber").val());
+    var result = numberArray(number);
+    for (var index = 0; index < result.length; index += 1) {
+        $("ul#result").append("<li>" + result[index] + "</li>")
+      }
 
   });
 });
