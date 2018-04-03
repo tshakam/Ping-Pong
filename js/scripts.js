@@ -1,20 +1,14 @@
-function  numberArray(userNumber) {
+function  numberArray(userNo) {
   var numbers = [];
-  for (var i = 1; i <= userNumber; i++) {
-    if (( i % 3 === 0) && ( i % 5 === 0)) {
-      numbers.push("pingpong")
-    } else if ( i % 5 === 0) {
-
+  for (var index1= 1; index1<= userNo; index1++) {
+    if (( index1 % 3 === 0) && ( index1 % 5 === 0)) {
+      numbers.push("ping pong")
+    } else if ( index1 % 5 === 0) {
       numbers.push("pong")
-
-    } else if ( i % 3 === 0){
-
+    } else if ( index1 % 3 === 0){
       numbers.push("ping")
-
     } else {
-
-        numbers.push(i)
-
+        numbers.push(index1)
       }
   }
   return numbers;
