@@ -14,10 +14,10 @@ function pingpong(number) {
     }
   //front end logic
 $(document).ready(function() {
-  $("form#ping-pong").submit(function(event) {
+  $("form#pingpong").submit(function(event) {
     event.preventDefault();
     $("ul").empty();
-    var  number = parseInt($("input#userNumber").val());
+    var  number = parseInt($("input#number").val());
     var result = numberArray(number);
     for (var index = 0; index < result.length; index += 1) {
         $("ul#result").append("<li>" + result[index] + "</li>")
