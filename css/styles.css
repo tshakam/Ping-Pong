@@ -2,8 +2,32 @@
   text-align: center;
   width: 100%;
   margin-left: 0px;
+  background-color: green;
 }
 .main{
-float left;
-width:50%;
+  float left;
+  width:30%;
+  text-align: center;
+  background-color: blue;
+}
+.sidebar{
+  text-align: center;
+  float: right;
+  background-color: inherit;
+  line-height: 1.9em;
+  color: #17202A;
+  width: 30%;
+  padding-top: 4%;
+  padding right: 1.5%;
+  font-family: sans-serif;
+  border: 2px solid grey;
+
+}
+.main{
+  width: 100%;
+  float: center;
+}
+.forms{
+  width: 10%;
+  float: center;
 }

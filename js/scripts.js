@@ -14,7 +14,7 @@ function  numberArray(userNo) {
   return numbers;
 }
 
-  //front end logic
+  //user interface logic
 $(document).ready(function() {
   $("form#pingpong").submit(function(event) {
     event.preventDefault();
